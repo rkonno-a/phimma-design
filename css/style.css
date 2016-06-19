@@ -1,15 +1,24 @@
+@charset "UTF-8";
+
+html {
+  min-height: 100%;
+  position: relative;
+  margin-bottom: 2em;
+}
+
 body {
-  background-color: #DFE2E6;
+  background-color: #E8EBED;
 }
 
 .primary-pink {
-  background-color:#FF6860;
+  background-color: #FF6860;
   color: #FFFFFF;
   border: none;
 }
 
 .sub-blue {
-  border: 2px solid #02AEDC;
+  border: 1px solid #02AEDC;
+  color: #02AEDC;
 }
 
 /* ヘッダー */
@@ -35,6 +44,31 @@ body {
   line-height: 36px;
 }
 
+/* ヘッダー右部分ボタン類の横並び設定 */
+.header-right {
+  overflow: hidden;
+}
+
+.header-right-box {
+  float: left;
+}
+
+/* clearfix */
+.header-right:before,
+.header-right:after {
+    content: "";
+    display: table;
+}
+
+.header-right:after {
+    clear: both;
+}
+
+/* For IE 6/7 (trigger hasLayout) */
+.header-right {
+    zoom: 1;
+}
+
 /* ヘッダーの検索フォーム部分 */
 
 .box{
@@ -43,14 +77,14 @@ body {
 }
 
 .container-1{
-  width: 300px;
+  width: 200px;
   vertical-align: middle;
   white-space: nowrap;
   position: relative;
 }
 
 .container-1 input#search{
-  width: 300px;
+  width: 200px;
   height: 50px;
   /*background: #2b303b;*/
   border: 2px solid #f5f5f5;
@@ -85,7 +119,7 @@ transition: background .55s ease;
    color: #65737e;
 }
 
-.container-1 .icon{
+.container-1 .icon {
   position: absolute;
   top: 50%;
   margin-left: 17px;
@@ -94,22 +128,56 @@ transition: background .55s ease;
   color: #4f5b66;
 }
 
-.container-1 input#search:hover, .container-1 input#search:focus, .container-1 input#search:active{
+.container-1 input#search:hover,
+.container-1 input#search:focus,
+.container-1 input#search:active {
     outline:none;
     background: #ffffff;
-  }
+}
 
 
 /* ログインボタン */
 .login-btn {
-  margin: 1px 20px 0 50px;
+  margin: 1px 5px 0 30px;
   height: 45px;
   width: 100px;
 }
 
 /* 新規登録ボタン */
 .signup-btn {
-  margin: 1px 20px 0 50px;
+  margin: 1px 10px 0 5px;
   height: 45px;
   width: 170px;
+}
+
+
+/* フッター */
+footer {
+  bottom: 0;
+  height: 5em;
+  position: absolute;
+  width: 100%;
+}
+
+.footer-nav {
+  text-align: center;
+}
+
+.footer-nav a {
+  margin: 10px;
+  font-size: 0.8em;
+  color: #A2A6A9;
+}
+
+.footer-logo {
+  margin-top: 30px;
+  opacity: 0.8;
+  width: 150px;
+  height: 28px;
+}
+
+.footer-copywrite {
+  margin: 5px 0 30px 0;
+  font-size: 0.9em;
+  color: #A2A6A9;
 }

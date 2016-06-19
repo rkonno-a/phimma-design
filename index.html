@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-  <title>Bootstrap 101 Template</title>
+  <title>PHIMHEO｜大学生教科書フリマ！</title>
 
   <!-- Bootstrap -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
@@ -23,27 +23,94 @@
       <nav class="header navbar navbar-default navbar-fixed-top">
         <div class="container">
           <div class="row">
-            <div class="header-left col-md-4">
+            <div class="header-left col-md-6">
               <a class="navbar-brand" href="#"><img src="image/logo.png" alt="" width="250" height="47"></a>
             </div>
-            <div class="header-right col-md-3 .col-md-offset-3">
-              <div class="box">
-                <div class="container-1">
-                  <span class="icon"><i class="fa fa-search"></i></span>
-                  <input type="search" id="search" placeholder="検索する..." />
+            <div class="header-right col-md-6">
+              <div class="top-header-search header-right-box">
+                <div class="top-search-content">
+                  <div class="container-1">
+                    <span class="icon"><i class="fa fa-search"></i></span>
+                    <input type="search" id="search" placeholder="検索する..." />
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="header-right col-md-2 text-right">
-              <button class="btn btn-default login-btn primary-pink" type="submit">ログイン</button>
-            </div>
-            <div class="header-right col-md-2 text-left">
-              <button class="btn btn-default signup-btn sub-blue" type="submit">新規会員登録</button>
+              <div class="header-right-login header-right-box">
+                <button class="btn btn-default login-btn primary-pink" type="submit">ログイン</button>
+              </div>
+              <div class="header-right-signup header-right-box">
+                <button class="btn btn-default signup-btn sub-blue" type="submit">新規会員登録</button>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </nav>
+    </nav><!-- Header -->
+
+        <!--======== intro =========-->
+        <section class="intro">
+            <div class="row">
+                <div class="col-md-6 col-md-offset-3 col-sm-12 col-xs-12">
+                    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                            <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                        </ol>
+
+                        <div class="carousel-inner" role="listbox">
+                            <div class="item active">
+                                <div class="intro-content text-center">
+                                    <h1>welcome to Ranger</h1>
+                                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit agrel. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh viverra non.</p>
+                                    <a class="btn btn-default" href="#" role="button">Read More <i class="lnr lnr-chevron-right"></i></a>
+                                    <a class="btn btn-primary scroll" href="#what-we-do" href="#" role="button">Get Started <i class="lnr lnr-chevron-down"></i></a>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="intro-content text-center">
+                                    <h1>we can help you</h1>
+                                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit agrel. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh viverra non.</p>
+                                    <a class="btn btn-default" href="#" role="button">Read More <i class="lnr lnr-chevron-right"></i></a>
+                                    <a class="btn btn-primary scroll" href="#what-we-do" role="button">Get Started <i class="lnr lnr-chevron-down"></i></a>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="intro-content text-center">
+                                    <h1>we can Guide you</h1>
+                                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit agrel. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh viverra non.</p>
+                                    <a class="btn btn-default" href="#" role="button">Read More <i class="lnr lnr-chevron-right"></i></a>
+                                    <a class="btn btn-primary scroll" href="#what-we-do" href="#" role="button">Get Started <i class="lnr lnr-chevron-down"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--======== end intro =========-->
+
+
+    <footer>
+      <div class="row>
+        <div class="container">
+          <div class="footer-nav">
+            <nav class="">
+              <a href="#">よくある質問</a>
+              <a href="#">使い方</a>
+              <a href="#">プライバシー</a>
+              <a href="#">ご利用規約</a>
+              <a href="#">運営会社</a>
+              <a href="#">運営へのお問合せ</a>
+            </nav>
+            <div>
+              <img src="image/logo.png" class="footer-logo">
+              <p class="footer-copywrite">© 2016 PHIMHEO</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
